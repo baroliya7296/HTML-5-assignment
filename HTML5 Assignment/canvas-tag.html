@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>canvas shape</title>
+    <style>
+        body{
+            margin: 50px auto;
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas1" width="200" height="200" style="border: 1px solid #000000"></canvas>
+
+    <script>
+      var canvas = document.getElementById('myCanvas1');
+      var ctx1 = canvas.getContext('2d');
+
+      // Fill with gradient
+      ctx1.fillStyle = 'green';
+      ctx1.fillRect(50, 50, 100, 100);
+    </script>
+
+    <canvas id="myCanvas2" width="200" height="200" style="border:1px solid #000000;"></canvas>
+
+      <script>
+        var canvas = document.getElementById("myCanvas2");
+        var ctx = canvas.getContext("2d");
+      
+        ctx.beginPath();
+        ctx.arc(100, 100, 70, 0, 2 * Math.PI); 
+        ctx.fillStyle = "red"; 
+        ctx.fill();
+        ctx.stroke();
+      </script>
+
+   <canvas id="myCanvas3" width="200" height="200" style="border:1px solid #000000;"></canvas>
+   
+    <script>
+      var canvas = document.getElementById('myCanvas3');
+      var ctx = canvas.getContext('2d');
+
+      // Fill with gradient
+      ctx.fillStyle = 'blue';
+      ctx.fillRect(10, 60, 180, 80);
+    </script>
+
+  </body>
+</html>
